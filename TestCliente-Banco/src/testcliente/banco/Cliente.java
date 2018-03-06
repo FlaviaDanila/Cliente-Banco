@@ -25,11 +25,11 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String getApellidos() {
+    public String getApellido() {
         return this.apellido;
     }
 
-    public void setApellidos(String apellido) {
+    public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
