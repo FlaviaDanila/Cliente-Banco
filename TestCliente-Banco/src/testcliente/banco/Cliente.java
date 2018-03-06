@@ -5,10 +5,11 @@ package testcliente.banco;
  *
  * @author Yaki's
  */
+
 public class Cliente {
 
     private String nombre;
-    private String apellidos;
+    private String apellido;
     private int edad;
     
     public String getNombre() {
@@ -20,11 +21,11 @@ public class Cliente {
     }
 
     public String getApellidos() {
-        return this.apellidos;
+        return this.apellido;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellidos(String apellido) {
+        this.apellido = apellido;
     }
 
     public int getEdad() {

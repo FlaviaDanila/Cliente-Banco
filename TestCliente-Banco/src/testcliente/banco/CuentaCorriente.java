@@ -1,14 +1,47 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package testcliente.banco;
 
 /**
  *
  * @author Yaki's
  */
+
 public class CuentaCorriente {
+
+    private Cliente titular;
+    private int nroCuenta;
+    private double saldo;
+    
+    public void CuentaCorriente(Cliente titular, int nroCuenta, double saldo) {
+        
+    }
+
+    
+    
+    public Cliente getTitular() {
+        return this.titular;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public int getNroCuenta() {
+        return this.nroCuenta;
+    }
+
+    public void setNroCuenta(int nroCuenta) {
+        this.nroCuenta = nroCuenta;
+    }
+
+    public double getSaldo() {
+        return this.saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    
+    
     
 }
