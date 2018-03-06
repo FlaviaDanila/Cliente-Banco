@@ -33,11 +33,12 @@ public class CuentaAhorro extends CuentaCorriente {
     }
     
     public double getInteres() {
-        return this.interes;
+        return interes;
     }
 
     public void setInteres(double interes) {
         this.interes = interes;
     }
+    
     
 }
