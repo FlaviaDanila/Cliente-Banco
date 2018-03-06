@@ -11,19 +11,20 @@ public class CuentaCorriente {
     private Cliente titular;
     private int nroCuenta;
     private double saldo;
-    
-    public void CuentaCorriente(Cliente titular, int nroCuenta, double saldo) {
-        this.titular = titular;
-        this.nroCuenta = nroCuenta;
-        this.saldo = saldo;
         
+    public CuentaCorriente(Cliente titular, int nroCuenta, double saldo) {
+        this(titular, nroCuenta);
+        //this.titular = titular;
+        //this.nroCuenta = nroCuenta;
+        this.saldo = saldo; 
     }
 
-    public void CuentaCorriente(Cliente titular, int nroCuenta) {
+    public CuentaCorriente(Cliente titular, int nroCuenta) {
         this.titular = titular;
         this.nroCuenta = nroCuenta;
         this.saldo = 0;
     }
+    
         
     public double depositar (double monto) {
         saldo = saldo + monto;
