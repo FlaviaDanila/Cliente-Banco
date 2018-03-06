@@ -1,8 +1,6 @@
 
 package testcliente.banco;
 
-//import java.util.List;
-
 /**
  *
  * @author Yaki's
@@ -38,8 +36,18 @@ public class CuentaCorriente {
     }
     
         @Override
-    public boolean equals(Object o) {
-        return false;
+    public boolean equals(Object cuenta) {
+        if (cuenta == null || (cuenta instanceof CuentaCorriente)) {
+            return false;
+        }
+        CuentaCorriente otraCuenta = (CuentaCorriente) cuenta;
+        if (otraCuenta.getNroCuenta() == this.nroCuenta) {
+            return true;
+
+        }
+        else{
+            return false;
+        }
     }
     
     public Cliente getTitular() {
