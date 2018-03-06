@@ -13,7 +13,6 @@ public class CuentaCorriente {
     private Cliente titular;
     private int nroCuenta;
     private double saldo;
-    //private double monto;
     
     public void CuentaCorriente(Cliente titular, int nroCuenta, double saldo) {
         
@@ -35,9 +34,10 @@ public class CuentaCorriente {
     
         @Override
     public String toString() {
-        return titular + nroCuenta + saldo;
+        return "Titular: "+ this.titular.toString() + "Cuenta Nro: " + this.nroCuenta + "Saldo: " + this.saldo;
     }
     
+
     
     public Cliente getTitular() {
         return this.titular;

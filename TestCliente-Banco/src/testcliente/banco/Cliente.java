@@ -17,7 +17,6 @@ public class Cliente {
         return nombre + apellido + edad;
     }
     
-    
     public String getNombre() {
         return nombre;
     }
