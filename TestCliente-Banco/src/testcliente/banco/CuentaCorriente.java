@@ -22,12 +22,19 @@ public class CuentaCorriente {
         
     public double depositar (double monto) {
         saldo = saldo + monto;
-        return saldo;
+        System.out.println("Su Saldo Actual es: ");
+        return this.saldo;
     }
     
     public double extraer (double monto) {
-        saldo = saldo - monto;
-        return saldo;
+        if (saldo < monto) {
+            saldo = 0;
+            System.out.println("Saldo Insuficiente para Extracción");
+            return this.saldo;
+        } else {
+            System.out.println("Su Saldo Actual es: ");
+            return this.saldo - monto;
+        }
     }
     
         @Override
@@ -43,7 +50,6 @@ public class CuentaCorriente {
         CuentaCorriente otraCuenta = (CuentaCorriente) cuenta;
         if (otraCuenta.getNroCuenta() == this.nroCuenta) {
             return true;
-
         }
         else{
             return false;
