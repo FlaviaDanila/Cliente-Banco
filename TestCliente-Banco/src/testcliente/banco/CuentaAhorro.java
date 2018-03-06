@@ -15,19 +15,20 @@ public class CuentaAhorro extends CuentaCorriente {
         this.interes = interes;
     }
     
-    public CuentaAhorro() {
-        
+    public CuentaAhorro(Cliente titular, int nroCuenta, double interes) {
+        super(titular, nroCuenta);
+        this.interes = interes;
     }
     
-    public CuentaAhorro() {
-        
+    public CuentaAhorro(Cliente titular, int nroCuenta) {
+        super(titular, nroCuenta);
     }
     
     public void calcularInteres() {
         
     }
     
-    public void calcularInteres(double intere) {
+    public void calcularInteres(double interes) {
         
     }
     
