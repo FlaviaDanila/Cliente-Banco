@@ -1,6 +1,8 @@
 
 package testcliente.banco;
 
+//import java.util.List;
+
 /**
  *
  * @author Yaki's
@@ -11,11 +13,30 @@ public class CuentaCorriente {
     private Cliente titular;
     private int nroCuenta;
     private double saldo;
+    //private double monto;
     
     public void CuentaCorriente(Cliente titular, int nroCuenta, double saldo) {
         
     }
 
+    public void CuentaCorriente(Cliente titular, int nroCuenta) {
+        
+    }
+        
+    public double depositar (double monto) {
+        saldo = saldo + monto;
+        return saldo;
+    }
+    
+    public double extraer (double monto) {
+        saldo = saldo - monto;
+        return saldo;
+    }
+    
+        @Override
+    public String toString() {
+        return titular + nroCuenta + saldo;
+    }
     
     
     public Cliente getTitular() {

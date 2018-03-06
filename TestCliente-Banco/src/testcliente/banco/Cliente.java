@@ -12,6 +12,12 @@ public class Cliente {
     private String apellido;
     private int edad;
     
+        @Override
+    public String toString() {
+        return nombre + apellido + edad;
+    }
+    
+    
     public String getNombre() {
         return nombre;
     }
