@@ -37,7 +37,10 @@ public class CuentaCorriente {
         return "Titular: "+ this.titular.toString() + "Cuenta Nro: " + this.nroCuenta + "Saldo: " + this.saldo;
     }
     
-
+        @Override
+    public boolean equals(Object o) {
+        return false;
+    }
     
     public Cliente getTitular() {
         return this.titular;
