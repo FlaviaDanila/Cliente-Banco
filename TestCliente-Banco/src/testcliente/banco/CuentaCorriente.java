@@ -52,9 +52,12 @@ public class CuentaCorriente {
         if (cuenta == null || (cuenta instanceof CuentaCorriente)) {
             return false;
         }
+        //Crear variable auxiliar para retornar equals
+        //boolean salida = false;
         CuentaCorriente otraCuenta = (CuentaCorriente) cuenta;
         if (otraCuenta.getNroCuenta() == this.nroCuenta) {
             return true;
+            //return salida;
         }
         else{
             return false;

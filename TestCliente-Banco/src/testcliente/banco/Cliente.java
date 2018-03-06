@@ -14,7 +14,7 @@ public class Cliente {
     
         @Override
     public String toString() {
-        return "Apellido y Nombre: " + this.apellido + this.nombre + "Edad: " + this.edad;
+        return "Titular: " + this.apellido + this.nombre + "Edad: " + this.edad;
     }
     
     public String getNombre() {
