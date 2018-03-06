@@ -13,11 +13,16 @@ public class CuentaCorriente {
     private double saldo;
     
     public void CuentaCorriente(Cliente titular, int nroCuenta, double saldo) {
+        this.titular = titular;
+        this.nroCuenta = nroCuenta;
+        this.saldo = saldo;
         
     }
 
     public void CuentaCorriente(Cliente titular, int nroCuenta) {
-        
+        this.titular = titular;
+        this.nroCuenta = nroCuenta;
+        this.saldo = 0;
     }
         
     public double depositar (double monto) {
@@ -29,10 +34,10 @@ public class CuentaCorriente {
     public double extraer (double monto) {
         if (saldo < monto) {
             saldo = 0;
-            System.out.println("Saldo Insuficiente para Extracción");
+            System.out.println("Saldo Insuficiente: ");
             return this.saldo;
         } else {
-            System.out.println("Su Saldo Actual es: ");
+            System.out.println("Saldo Actual: ");
             return this.saldo - monto;
         }
     }
