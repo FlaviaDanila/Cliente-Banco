@@ -44,7 +44,7 @@ public class CuentaCorriente {
     
         @Override
     public String toString() {
-        return "Titular: "+ this.titular.toString() + "Cuenta Nro: " + this.nroCuenta + "Saldo: " + this.saldo;
+        return this.titular.toString() + " Cuenta Nro: " + this.nroCuenta + " Saldo: " + this.saldo;
     }
     
         @Override
