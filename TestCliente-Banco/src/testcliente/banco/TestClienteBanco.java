@@ -42,11 +42,49 @@ public class TestClienteBanco {
         System.out.println(ca3.toString());
         
         //Comparar Cuentas
-        //System.out.println(cc1.equals.(cc2));
+        System.out.println("Comparación de Nros de Cuenta");
+        System.out.println("CC1 vs. CC2");
+        if (cc1.equals(cc2)) {
+            System.out.println("Nros de Cuenta IGUALES");
+        } else {
+            System.out.println("Nros de Cuenta DISTINTOS");
+
+        }
+
+        System.out.println("CA1 vs. CA2");
+        if (ca1.equals(ca2)) {
+            System.out.println("Nros de Cuenta IGUALES");
+        } else {
+            System.out.println("Nros de Cuenta DISTINTOS");
+        }
+
+        System.out.println("CA2 vs. CA3");
+        if (ca2.equals(ca3)) {
+            System.out.println("Nros de Cuenta IGUALES");
+
+        } else {
+            System.out.println("Nros de Cuenta DISTINTOS");
+
+        }
+
+        System.out.println("CA1 vs. CA3");
+        if (ca1.equals(ca3)) { 
+            System.out.println("Nros de Cuenta IGUALES");
+
+        } else {
+            System.out.println("Nros de Cuenta DISTINTOS");
+        }
         
         //Crear Caja de Ahorro con los mismos valores que una anterior y compararlas
-        CuentaAhorro ca4 = new CuentaAhorro (c2, 5543, 0.7);
-        
+        CuentaAhorro ca4 = new CuentaAhorro(c1, 5578);
+ 
+        System.out.println("CA1 vs. CA4");
+        if (ca1.equals(ca4)) { 
+            System.out.println("Nros de Cuenta IGUALES");
+
+        } else {
+            System.out.println("Nros de Cuenta DISTINTOS");
+        }
         
         
         //Calcular nuevo saldo en una Caja de Ahorro y aplicar 15.5 de interes
